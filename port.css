@@ -1,0 +1,184 @@
+/* css for all page of portfolio site*/
+body{
+	background-image :linear-gradient(to bottom,#be93c5,#7bc6cc,#be93c5);/*background for page*/
+	margin:0;
+	padding:0;
+}
+/*css for deciding fontsize ,background,etc for nav bar*/
+nav{
+	font-size: 25px;
+    background-image: linear-gradient(to left,#363553,#903775,#e8458b);
+    height: 50px;
+    line-height: 50px;    
+}
+/*for title in navbar*/
+.bar{
+	margin:0  30 0 0px ;
+}
+.bar a{
+	text-decoration: none;
+	color:#43b7b8;
+	margin:0 10px;
+	line-height: 70px;
+}
+/*css for presentation of hamburger icon*/
+label{
+	margin: 0 60px 0 0;
+	font-size:35px;
+	line-height: 70px;
+    display:none;/*icon not visible for website view*/
+}
+#hamburger{
+	display:none;/*icon is not displayed*/
+}
+nav a{
+	color:#43b7b8;/* added text color for title in nav bar*/
+	text-decoration: none;
+	padding: 10px;
+}
+/*added hover in nav bar*/
+nav a:hover{
+	color: #e96d71;
+	text-decoration: underline;
+}
+/* started css for home page*/
+   /*added css property for content of home page*/
+.do{
+	/*adjusted page with css properties*/
+	float:left;
+	margin-top: 120px;
+	margin-left: 20%;
+	font-size: 50px;
+	text-decoration: overline;
+	text-transform: capitalize;
+	color:darkred;/*added text color*/
+	/*animation is used*/
+	animation-name: naam;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	
+}
+/*for animation used above*/
+@keyframes naam{
+	from{color:darkred;}
+	to{color:#336600;}
+}
+/*css for next content in page*/
+.position{
+	/*used  css to adjust the content*/
+    float: left;
+    margin-top: 220px;
+    margin-left: 60px;
+    font-size: 25px;
+    color: #004d00;/*for text color*/
+}
+.it{
+	float: left;
+	margin-top: 100px;
+	margin-left:380px;
+	font-size: 30px;
+	color:black;
+	background-image: linear-gradient(to right,#f00b51,#7366ff);/*added background color for text*/
+}
+/* hovered the content*/
+.it:hover{
+	background-image: linear-gradient(to right,#d0ffae,#34ebe9);
+}
+/*css for contact page*/
+   /*used css for adjusting the content*/
+.here{
+	float: left;
+	margin-left: 250px;
+	margin-top: 20%;
+}
+.here p{
+	font-size: 20px;
+	text-align: center;
+}
+.here b{
+	font-size: 60px;
+	text-shadow: 2px 2px gray;
+	color: #0f3d3d;
+	/*added animation*/
+	animation-name:wow;
+	animation-duration: 10s;
+	position: relative;
+	animation-iteration-count: 3;
+}
+/*for animaion used above*/
+@keyframes wow{
+	0% {color:#0f3d3d;}
+	25%{color:#000099;}
+	50%{color: #993366;}
+	75%{color:#e60000;}
+	100%{color:#00ff00;}
+}
+.we{
+	/*css for the form made in contact page*/
+   float:right;
+   margin-top: 100px;
+   margin-right:  180px;
+   font-size: 20px;
+   background-color: #a31f15;
+   cursor: pointer;
+}
+/*css for portfolio page*/
+.saaam{
+	/*asusal  used css property*/
+ 	float: right;
+ 	margin-top: 60px;
+ 	margin-right: 45%;
+ 	font-size: 40px;
+ 	color:#336699;
+}
+.saaam:hover{
+	/*used hover*/
+ 	background: #ff9966;
+}
+/*css grid is used*/
+#grid{
+float:right;
+margin-top: 20px;
+margin-right:  300px;
+display: grid;
+grid-template-columns: 190px 190px 190px;
+grid-template-rows: 100px 100px;
+grid-gap: 20px;
+padding: 10px;
+}
+/*adjusted the grid*/
+#grid> div {
+  background-color:grey;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
+/*again used hover*/
+#grid >div:hover{
+   background-color: #66ff99;
+   color:#990000;
+}
+/*css for cv page*/
+.done{
+	/*adjusted the page*/
+    float:left;
+	margin-top: 60px;
+	margin-left: 50px;
+	color:#660033;/*text color*/
+	font-size: 16px;/*for size of font*/
+}
+.good{
+/*used css for content in cv page*/
+	float: left;
+	margin-top: 230px;
+	margin-left: 0px;
+	color:#660033;
+	font-size: 16px;
+}
+.work{
+	/* css to adjust the content*/
+	float: left;
+	margin-top: 320px;
+	color:#660033;
+	font-size: 16px;
+}
