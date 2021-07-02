@@ -182,3 +182,118 @@ padding: 10px;
 	color:#660033;
 	font-size: 16px;
 }
+
+
+
+
+/* css for making the site respondive for mobile view*/
+
+
+
+   @media only screen and (max-width:600px){
+   	  /*media queries for showing up hamburger icon in responsive view*/
+		label{
+			display:block;
+			cursor:pointer;
+		}
+		.bar{
+			margin-left:10px;
+			text-align: left;
+			height:5%;
+			display: none;
+			background-color: black;
+
+		}
+		.bar a{
+			display:block;
+			color:red;
+			background-color: black;
+			margin: -20px;
+			font-size: 25px;
+		}
+		#hamburger:checked+.bar{
+			display:block;
+			height:5%;
+			width: 20%;
+		}
+		 /*media queries for home page*/
+	    .do{
+		 	float: right;
+		 	margin: 0;
+		    padding-top: 170px;
+		    padding-right: 30px;
+		    width: 100%
+            font-size: 20px;
+        }
+		.position{
+            margin: 0;
+            padding-top: 150px;
+            padding-bottom: 20px;
+            font-size: 25px;
+		 	width:100%;
+        }
+		.it{
+		    margin:0;
+		 	width: 100%;
+            text-align: center;
+            position: relative;
+        }
+        /*media aueries for portfolio page*/
+		.saaam{
+		    font-size:35px;
+		 	margin: 0;
+		 	padding-top: 100px;
+		 	padding-right: 120px;
+		}
+		.container{
+		 	margin: 0;
+		 	float: left;
+		 	padding-top: 80px;
+		 	padding-left: 160px;
+	    }
+	   #grid{
+            margin: 0;
+		 	display: grid;
+            grid-template-columns: 120px 120px ;
+            grid-template-rows: 50px 50px 50px;
+            grid-gap: 10px;
+            font-size: 5px;
+            width: 100%;
+        }
+        /*media queries for contact page*/
+		.here{
+		 	width:100%;
+		 	margin:0;
+		 	padding-top: 50px;
+		}
+		.here b{
+		 	float: right;
+		 	font-size: 25px;
+		 	width: 100%
+		 	margin:0;
+		 	padding-right: 100px;
+		 	padding-bottom: 80px;
+		}
+		.we{
+		 	font-size: 20px;
+		 	margin: 0;
+		}
+		/* media queries for  cv page */
+		.done{
+		 	margin:0;
+		 	float: right;
+		 	padding-top: 90px;
+		}
+		.good{
+		    margin:0;
+		    padding-top: 85px;
+		}
+		.work{
+		    margin:0;
+		 	width:100%;
+		 	padding-top: 25px;
+		 	padding-bottom: 10px;
+		}
+	     
+}
+
