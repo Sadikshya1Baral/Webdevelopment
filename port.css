@@ -1,0 +1,375 @@
+/* css for all page of portfolio site*/
+body{
+	background-image :linear-gradient(to bottom,#be93c5,#7bc6cc,#be93c5);/*background for page*/
+	margin:0;
+	padding:0;
+}
+/*css for deciding fontsize ,background,etc for nav bar*/
+nav{
+	font-size: 25px;
+    background-image: linear-gradient(to left,#363553,#903775,#e8458b);
+    height: 50px;
+    line-height: 50px;    
+}
+/*for title in navbar*/
+.bar{
+	margin:0  30 0 0px ;
+}
+.bar a{
+	text-decoration: none;
+	color:#43b7b8;
+	margin:0 10px;
+	line-height: 70px;
+}
+/*css for presentation of hamburger icon*/
+label{
+	margin: 0 60px 0 0;
+	font-size:35px;
+	line-height: 70px;
+    display:none;/*icon not visible for website view*/
+}
+#hamburger{
+	display:none;/*icon is not displayed*/
+}
+nav a{
+	color:#43b7b8;/* added text color for title in nav bar*/
+	text-decoration: none;
+	padding: 10px;
+}
+/*added hover in nav bar*/
+nav a:hover{
+	color: #e96d71;
+	text-decoration: underline;
+}
+/* started css for home page*/
+   /*added css property for content of home page*/
+.do{
+	/*adjusted page with css properties*/
+	float:left;
+	margin-top: 120px;
+	margin-left: 20%;
+	font-size: 50px;
+	text-decoration: overline;
+	text-transform: capitalize;
+	color:darkred;/*added text color*/
+	/*animation is used*/
+	animation-name: naam;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	
+}
+/*for animation used above*/
+@keyframes naam{
+	from{color:darkred;}
+	to{color:#336600;}
+}
+/*css for next content in page*/
+.position{
+	/*used  css to adjust the content*/
+    float: left;
+    margin-top: 220px;
+    margin-left: 60px;
+    font-size: 25px;
+    color: #004d00;/*for text color*/
+}
+.it{
+	float: left;
+	margin-top: 100px;
+	margin-left:380px;
+	font-size: 30px;
+	color:black;
+	background-image: linear-gradient(to right,#f00b51,#7366ff);/*added background color for text*/
+}
+/* hovered the content*/
+.it:hover{
+	background-image: linear-gradient(to right,#d0ffae,#34ebe9);
+}
+/*css for contact page*/
+   /*used css for adjusting the content*/
+.here{
+	float: left;
+	margin-left: 250px;
+	margin-top: 20%;
+}
+.here p{
+	font-size: 20px;
+	text-align: center;
+}
+.here b{
+	font-size: 60px;
+	text-shadow: 2px 2px gray;
+	color: #0f3d3d;
+	/*added animation*/
+	animation-name:wow;
+	animation-duration: 10s;
+	position: relative;
+	animation-iteration-count: 3;
+}
+/*for animaion used above*/
+@keyframes wow{
+	0% {color:#0f3d3d;}
+	25%{color:#000099;}
+	50%{color: #993366;}
+	75%{color:#e60000;}
+	100%{color:#00ff00;}
+}
+.we{
+	/*css for the form made in contact page*/
+   float:right;
+   margin-top: 100px;
+   margin-right:  180px;
+   font-size: 20px;
+   background-color: #a31f15;
+   cursor: pointer;
+}
+/*css for portfolio page*/
+.saaam{
+	/*asusal  used css property*/
+ 	float: right;
+ 	margin-top: 60px;
+ 	margin-right: 45%;
+ 	font-size: 40px;
+ 	color:#336699;
+}
+.saaam:hover{
+	/*used hover*/
+ 	background: #ff9966;
+}
+/*css grid is used*/
+#grid{
+float:right;
+margin-top: 20px;
+margin-right:  300px;
+display: grid;
+grid-template-columns: 190px 190px 190px;
+grid-template-rows: 100px 100px;
+grid-gap: 20px;
+padding: 10px;
+}
+/*adjusted the grid*/
+#grid> div {
+  background-color:grey;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
+/*again used hover*/
+#grid >div:hover{
+   background-color: #66ff99;
+   color:#990000;
+}
+/*css for cv page*/
+.done{
+	/*adjusted the page*/
+    float:left;
+	margin-top: 60px;
+	margin-left: 50px;
+	color:#660033;/*text color*/
+	font-size: 16px;/*for size of font*/
+}
+.good{
+/*used css for content in cv page*/
+	float: left;
+	margin-top: 230px;
+	margin-left: 0px;
+	color:#660033;
+	font-size: 16px;
+}
+.work{
+	/* css to adjust the content*/
+	float: left;
+	margin-top: 320px;
+	color:#660033;
+	font-size: 16px;
+}
+/*css of site report page*/
+ .rep{
+ 	/*adjusted the page*/
+ 	font-size: 60px;
+	color:#990033;
+	float: left;
+	margin-top: 100px;
+	margin-left: 35%;
+	animation-name: port;/*animation is used*/
+	animation-duration: 4s;
+	animation-iteration-count: 3;
+}
+/* for animation used above*/
+@keyframes port{
+	from{color:#990033;}
+	to{color:#006666;}
+}
+.expe{
+	float:left;
+	margin-top: 30px;
+	margin-left:50px;
+}
+.expe h3{
+	font-size:30px;
+	color:#5D6F3E;
+}
+.expe p{
+	padding-right: 50px;
+	text-align: justify;
+}
+.expe h2{
+	font-size:35px;
+	color:black;
+}
+
+
+
+
+
+
+/* css for making the site respondive for mobile view*/
+
+
+
+   @media only screen and (max-width:600px){
+   	  /*media queries for showing up hamburger icon in responsive view*/
+		label{
+			display:block;
+			cursor:pointer;
+		}
+		.bar{
+			margin-left:10px;
+			text-align: left;
+			height:5%;
+			display: none;
+			background-color: black;
+
+		}
+		.bar a{
+			display:block;
+			color:red;
+			background-color: black;
+			margin: -20px;
+			font-size: 25px;
+		}
+		#hamburger:checked+.bar{
+			display:block;
+			height:5%;
+			width: 20%;
+		}
+		 /*media queries for home page*/
+	    .do{
+		 	float: right;
+		 	margin: 0;
+		    padding-top: 170px;
+		    padding-right: 30px;
+		    width: 100%
+            font-size: 20px;
+        }
+		.position{
+            margin: 0;
+            padding-top: 150px;
+            padding-bottom: 20px;
+            font-size: 25px;
+		 	width:100%;
+        }
+		.it{
+		    margin:0;
+		 	width: 100%;
+            text-align: center;
+            position: relative;
+        }
+        /*media aueries for portfolio page*/
+		.saaam{
+		    font-size:35px;
+		 	margin: 0;
+		 	padding-top: 100px;
+		 	padding-right: 120px;
+		}
+		.container{
+		 	margin: 0;
+		 	float: left;
+		 	padding-top: 80px;
+		 	padding-left: 160px;
+	    }
+	   #grid{
+            margin: 0;
+		 	display: grid;
+            grid-template-columns: 120px 120px ;
+            grid-template-rows: 50px 50px 50px;
+            grid-gap: 10px;
+            font-size: 5px;
+            width: 100%;
+        }
+        
+
+        
+        /*media queries for contact page*/
+		.here{
+		 	width:100%;
+		 	margin:0;
+		 	padding-top: 50px;
+		}
+		.here b{
+		 	float: right;
+		 	font-size: 25px;
+		 	width: 100%
+		 	margin:0;
+		 	padding-right: 100px;
+		 	padding-bottom: 80px;
+		}
+		.we{
+		 	font-size: 20px;
+		 	margin: 0;
+		}
+		/* media queries for  cv page */
+		.done{
+		 	margin:0;
+		 	float: right;
+		 	padding-top: 90px;
+		}
+		.good{
+		    margin:0;
+		    padding-top: 85px;
+		}
+		.work{
+		    margin:0;
+		 	width:100%;
+		 	padding-top: 25px;
+		 	padding-bottom: 10px;
+		}
+		/* media queries for site report page*/
+		.expe{
+			float: right; 
+			margin: 0;
+			padding-top: 20px;
+			padding-left: 40px;
+
+		}
+		.expe h3{
+			margin:0;
+			padding-top: 70px;
+			padding-left: 100px;
+			padding-bottom: 50px;
+			font-size: 39px;
+		}
+		.expe h2{
+			margin:0;
+			font-size: 30px;
+
+		}
+		.expe p{
+			margin: 0;
+			font-size: 15px;
+		}
+		.ref {
+			margin: 0;
+         font-size: 13px;
+
+		}
+		.expe h3{
+			margin: 0;
+			font-size: 30px;
+		}
+		.valid >img{
+			
+		}
+
+	     
+}
+
